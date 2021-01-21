@@ -51,6 +51,8 @@ async function synchronousPullWithLeaseManagement() {
 
         // Obtain the first message.  
 
+        console.log("len=" + response.receivedMessages.length);
+
         const message = response.receivedMessages[0];
 
         // Send the message to the worker function.
