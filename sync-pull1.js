@@ -2,7 +2,7 @@
  * TODO(developer): Uncomment these variables before running the sample.
  */
 const projectId = 'putti-ktb-inno-bootcamp';
-const subscriptionName = 'inno-sub-2';
+const subscriptionName = 'inno-sub-1';
 
 // Imports the Google Cloud client library. v1 is for the lower level
 // proto access.
