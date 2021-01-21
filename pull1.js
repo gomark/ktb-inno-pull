@@ -12,7 +12,14 @@ const pubSubClient = new PubSub();
 
 function listenForMessages() {
   // References an existing subscription
-  const subscription = pubSubClient.subscription(subscriptionName);
+
+  const subscriberOptions = {
+    flowControl: {
+      maxMessages: 50,
+    },
+  };
+
+  const subscription = pubSubClient.subscription(subscriptionName, subscriberOptions);
 
   // Create an event handler to handle messages
   let messageCount = 0;
