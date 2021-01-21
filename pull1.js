@@ -19,7 +19,8 @@ function listenForMessages() {
     },
   };
 
-  const subscription = pubSubClient.subscription(subscriptionName, subscriberOptions);
+  //const subscription = pubSubClient.subscription(subscriptionName, subscriberOptions);
+  const subscription = pubSubClient.subscription(subscriptionName);
 
   // Create an event handler to handle messages
   let messageCount = 0;
