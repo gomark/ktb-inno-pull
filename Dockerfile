@@ -3,4 +3,4 @@ WORKDIR /usr/src/app
 COPY package*.json ./
 RUN npm install
 COPY . .
-CMD [ "node", "publishMessage.js" ]
+CMD [ "node", "pull1.js" ]
