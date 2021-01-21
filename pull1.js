@@ -2,7 +2,7 @@
  * TODO(developer): Uncomment these variables before running the sample.
  */
 const subscriptionName = 'projects/putti-ktb-inno-bootcamp/subscriptions/inno-sub-1';
-const timeout = 60;
+const timeout = 600000;
 
 // Imports the Google Cloud client library
 const {PubSub} = require('@google-cloud/pubsub');
@@ -34,5 +34,6 @@ function listenForMessages() {
     console.log(`${messageCount} message(s) received.`);
   }, timeout * 1000);
 }
+
 
 listenForMessages();
